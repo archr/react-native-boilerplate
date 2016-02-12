@@ -1,0 +1,13 @@
+{
+  "name": "RNBoilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "baobab": "^2.3.3",
+    "baobab-react": "^1.0.1",
+    "react-native": "^0.19.0"
+  }
+}
