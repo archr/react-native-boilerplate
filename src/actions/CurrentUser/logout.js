@@ -1,5 +1,3 @@
-'use strict';
-
 import { AsyncStorage } from 'react-native';
 import { STORAGE } from '../../lib/constants';
 

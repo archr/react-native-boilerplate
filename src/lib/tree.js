@@ -1,5 +1,3 @@
-'use strict';
-
 import Baobab from 'baobab';
 
 const initialState = {
