@@ -1,12 +1,16 @@
 import Baobab from 'baobab';
 
+const isDev = typeof __DEV__ !== 'undefined' && __DEV__;
+
 const initialState = {
+  isDev,
+  booting: true,
   isLoggedIn: false
 };
 
 const options = {
   asynchronous: true,
-  autocommit: false,
+  autoCommit: false,
   immutable: true
 };
 

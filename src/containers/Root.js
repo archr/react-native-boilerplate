@@ -1,4 +1,4 @@
-import React, { Component } from 'react-native';
+import React, { Component, View } from 'react-native';
 import BaobabReact from 'baobab-react';
 import App from './App';
 import Login from './Login';
@@ -13,7 +13,10 @@ class Root extends Component {
     super(props);
 
     this.tree = tree;
-    this.watcher = this.tree.watch({ isLoggedIn: ['isLoggedIn'] });
+    this.watcher = this.tree.watch({
+      isLoggedIn: ['isLoggedIn'],
+      booting: ['booting']
+    });
     this.state = this.watcher.get();
   }
 
@@ -30,7 +33,12 @@ class Root extends Component {
   }
 
   render() {
-    const { isLoggedIn } = this.state;
+    const { isLoggedIn, booting } = this.state;
+
+    if (booting) {
+      return (<View/>);
+    }
+
     return (isLoggedIn ? <App/> : <Login/>);
   }
 }
