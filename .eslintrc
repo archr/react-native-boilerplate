@@ -6,6 +6,7 @@
   },
   "rules": {
     "comma-dangle": [2, "never"],
+    "jsx-quotes": "prefer-single",
     "react/prop-types": 0,
     "react/jsx-no-bind": 0,
     "react/jsx-indent-props": 2,

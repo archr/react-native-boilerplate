@@ -7,6 +7,7 @@
     "lint": "node_modules/eslint/bin/eslint.js src"
   },
   "dependencies": {
+    "apsl-react-native-button": "^2.4.2",
     "babel-eslint": "^4.1.8",
     "baobab": "^2.3.3",
     "baobab-react": "^1.0.1",

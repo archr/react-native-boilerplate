@@ -34,3 +34,7 @@ node_modules/
 npm-debug.log
 
 src/lib/config.js
+
+*.sublime-project
+
+*.sublime-workspace

@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.containers.container}>
-        <Text
+        <Text style={{ marginTop: 20 }}
           onPress={() => {
             this.props.actions.logout();
           }}
